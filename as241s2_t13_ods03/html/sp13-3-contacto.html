@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="Ie-edge">
+    <link rel="stylesheet" href="/css/sp13-3-contacto.css">
+    <title>contacto</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <section class="encabezado">
+                <img src="/imagenes/logoPrincipal.png" alt="logo de los 17 objetivos" class="logo" />
+                <div class="contorno">
+                    <input class="input" type="text" placeholder="Buscar..." />
+                    <button class="botom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </section>
+            <section class="mensajeS">
+                <em>
+                    <h2 class="mensaje"></h2>
+                </em>
+            </section>
+            <center>
+                <nav class="menu">
+                    <ul class="botones">
+                        <li><a href="/as241s2_t13_ods03/index.html">Inicio</a></li>
+                        <li><a href="/as241s2_t13_ods03/html/ods03.html">Bienestar y salud</a></li>
+                        <li><a href="/as241s2_t13_ods03/html/sp13-us2-TarjetaCard.html">practicas</a></li>
+                        <li><a href="/as241s2_t13_ods03/html/accioness.html">Acciones</a></li>
+                        <li><a href="/as241s2_t13_ods03/html/juegos.html">juego</a></li>
+                    </ul>
+                </nav>
+            </center>
+            <br />
+        </div>
+    </header>
+    <main>
+        <form class="form">
+            <h2 class="form_title">Contactate con nosotros</h2>
+            <p class="form_title">Si tienes dudas o sugerencias sobre la imformacion que compartimos , no dudes en
+                escribirnos . Cada mensaje es motivacion para seguir mejorando </p>
+
+            <div class="form_inputs">
+
+                <label class="form_label">
+
+                    <input type="name" placeholder=" " class="form_input">
+                    <span class="form_text">Ingresa tu nombre </span>
+                </label>
+
+                <label class="form_label">
+                    <input type="email" placeholder=" " class="form_input">
+                    <span class="form_text">Ingresa tu correo por favor</span>
+                </label>
+
+                <label class="form_label">
+
+                    <input type="message" placeholder=" " class="form_input">
+                    <span class="form_text">Escribe el mensaje</span>
+                </label>
+
+
+                <input type="submit" value="Enviar" class="form_submit">
+            </div>
+        </form>
+
+        <div class="container">
+            <h1 class="titulo">Preguntas Frecuentes ODS13</h1>
+            <div class="faq">
+                <div class="faq-item">
+                    <button class="faq-pregunta">¿Cuales son los sintomas de la gastritis cronica?</button>
+                    <div class="faq-answer">
+                        <p>
+                            Sensación de incomodidad o dolor en la parte superior del abdomen,En algunos casos, la
+                            gastritis crónica puede estar asociada con anemia debido a la deficiencia de vitamina B12.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pregunta">¿Es importante la actividad fisica en un adulto mayor?</button>
+                    <div class="faq-answer">
+                        <p>
+                            El entrenamiento físico y la movilidad tiene múltiples beneficios en los mayores, tales como
+                            aumento en la resistencia cardiopulmonar, resistencia musculo esquelética, fuerza,
+                            movilidad.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-pregunta">¿Es importante tomar liquidos en el dia ?</button>
+                    <div class="faq-answer">
+                        <p>
+                            Nuestro cuerpo necesita estar hidratado para funcionar de forma óptima. Si no tenemos
+                            suficiente líquido en el cuerpo, las funciones esenciales como la circulación de la sangre
+                            no se realizan adecuadamente y los órganos no reciben los nutrientes necesarios, de modo que
+                            su rendimiento será menos eficiente..
+                        </p>
+                    </div>
+                </div>
+                <script>
+                    document.querySelectorAll('.faq-pregunta').forEach(button => {
+                        button.addEventListener('click', () => {
+                            // Si el párrafo está oculto se mostrara al dar click , o si se esta mostrando al dar clic se ocultara
+                            const answer = button.nextElementSibling;  // Selecciona el elemento (respuesta) que seria el siguente despues de la pregunta
+                            answer.style.display = answer.style.display === 'block' ? 'none' : 'block'; //alterna el valor de mostrar y ocultar
+                        });
+                    });
+                </script>
+    </main>
+</body>
+
+</html>
+<!--contactame-->

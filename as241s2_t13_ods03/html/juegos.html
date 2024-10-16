@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jugo de memoria</title>
+    <link rel="stylesheet" href="/css/juegos.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <section class="encabezado">
+                <img src="/imagenes/logoPrincipal.png" alt="logo de los 17 objetivos" class="logo" />
+                <div class="contorno">
+                    <input class="input" type="text" placeholder="Buscar..." />
+                    <button class="botom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="menu-hamburguesa" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+            <section class="mensajeS">
+                <em>
+                    <h2 class="mensaje"></h2>
+                </em>
+            </section>
+            <center>
+                <nav class="menu" id="nav-menu">
+                    <ul class="botones">
+                        <li><a href="/as241s2_t13_ods03/index.html">Inicio</a></li>
+                        <li><a href="/as241s2_t13_ods03/html/ods03.html">Bienestar y salud</a></li>
+                        <li><a href="/as241s2_t13_ods03/html/sp13-us2-TarjetaCard.html">Prácticas</a></li>
+                        <li><a href="/as241s2_t13_ods03/html/accioness.html">Acciones</a></li>
+                        <li><a href="/as241s2_t13_ods03/html/juegos.html">Juego</a></li>
+                    </ul>
+                </nav>
+            </center>
+            <br />
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <h1>Juego de memoria</h1>
+            <footer>
+                <p>
+                    <a href="https://freedns.afraid.org/">Free DNS</a>
+                </p>
+            </footer>
+
+            <table>
+                <tr>
+                    <td><button id="0" onclick="destapar(0)" class="card"></button></td>
+                    <td><button id="1" onclick="destapar(1)" class="card"></button></td>
+                    <td><button id="2" onclick="destapar(2)" class="card"></button></td>
+                    <td><button id="3" onclick="destapar(3)" class="card"></button></td>
+                </tr>
+
+                <tr>
+                    <td><button id="4" onclick="destapar(4)" class="card"></button></td>
+                    <td><button id="5" onclick="destapar(5)" class="card"></button></td>
+                    <td><button id="6" onclick="destapar(6)" class="card"></button></td>
+                    <td><button id="7" onclick="destapar(7)" class="card"></button></td>
+                </tr>
+
+                <tr>
+                    <td><button id="8" onclick="destapar(8)" class="card"></button></td>
+                    <td><button id="9" onclick="destapar(9)" class="card"></button></td>
+                    <td><button id="10" onclick="destapar(10)" class="card"></button></td>
+                    <td><button id="11" onclick="destapar(11)" class="card"></button></td>
+                </tr>
+
+                <tr>
+                    <td><button id="12" onclick="destapar(12)" class="card"></button></td>
+                    <td><button id="13" onclick="destapar(13)" class="card"></button></td>
+                    <td><button id="14" onclick="destapar(14)" class="card"></button></td>
+                    <td><button id="15" onclick="destapar(15)" class="card"></button></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="section2">
+            <h2 id="aciertos" class="estadisticas">Aciertos:0 </h2>
+            <h2 id="t_restante" class="estadisticas">Tiempo: 40 segundos</h2>
+            <h2 id="movimientos" class="estadisticas">Movimientos: 0 </h2>
+        </section>
+    </main>
+    <footer>
+        <p>Juego programado por el grupo t13</p>
+    </footer>
+    <script src="/javaScript/juegos.js"></script>
+    
+</body>
+</html>

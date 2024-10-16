@@ -1,0 +1,308 @@
+body {
+    font-family: Arial, sans-serif;
+}
+/* HEADER */
+.cuerpo {
+    background: linear-gradient(to bottom, #09504A,#1a8279, #93CFCA, #FFFFFF);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.encabezado {
+    background-color: #063B3B;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    max-height: 70px;
+}
+
+.contorno {
+    display:flex;
+    height: 10px;
+}
+
+.input {
+    padding: 15px;
+    width: 350px;
+    border-radius: 10px 0 0 10px;
+    border: 0;
+    outline: none;
+    flex: 1;
+    display: flex;
+}
+
+.botom {
+    background-color: #39938b !important;
+    padding: 15px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mensajeS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px; /* Ajusta la altura según lo que necesites */
+    text-align: center;
+}
+
+.mensaje{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 0;
+    position: relative;
+    display: inline-block;
+    color: rgb(193, 191, 191);
+}
+
+.menu{
+    background-color: #389292;
+    padding: 20px;
+    width: 96%;
+    justify-content: center;
+    border-radius: 50px;
+
+}
+
+.botones{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+}
+
+.botones li{
+    margin-left: 50px;
+    border: 2px solid #FED08A;
+    border-radius: 20px;
+    background-color: #70c1c1;
+    width: 200px;
+}
+
+.botones a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+
+/*hover: maus */
+nav a:hover {
+    background-color: #036e5575;
+    border-radius: 20px;
+}
+
+/* MAIN */
+
+.info {
+    border-radius: 80px;
+    background-color: #fed08a5b;
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente el párrafo con la imagen */
+    width: 95%;
+    justify-content: center;
+}
+
+.circulo {
+    max-height: 180px;
+    margin-left: 40px;
+}
+
+.parrafo {
+    color: white;
+    margin: 0;
+    /* Elimina los márgenes del párrafo */
+    text-align: justify;
+    padding-left: 80px;
+    padding-right: 40px;
+}
+
+.titulo {
+    color: white;
+    padding-left: 50px;
+    text-align:left;
+}
+
+
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+    /* Alinea los cuadrados en la parte superior */
+    padding: 20px;
+    /* Espacio alrededor del contenedor */
+}
+
+.verde {
+    width: 200px;
+    height: 800px;
+    background-color: #038325;
+}
+
+.cuadrado {
+    width: 1500px;
+    height: 400px;
+    background-color: #fcfeff;
+    margin-left: 20px;
+    /* Espacio entre los cuadrados */
+}
+
+.carrusel {
+    position: relative;
+    width: 30%;
+    margin: auto;
+    overflow: hidden;
+    justify-content: left;
+}
+
+.carruselFondo{
+    background-image: url(https://cswetwebcorsta01.blob.core.windows.net/uploads/2022/04/ODS-Image.png);
+
+}
+
+.carrusel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrusel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carrusel-item img {
+    width: 100%;
+    display: block;
+}
+
+
+.prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.next {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.cuadradoHistoria{
+    background: linear-gradient(to bottom, #70BAB4, #112D2B);
+    width: 280px;
+    height: 700px;
+    border-radius: 30px;
+    margin-left: 45px;
+}
+
+.historia{
+    font-family: 'Arial', sans-serif; 
+    font-size: 35px;
+    text-align: center; 
+    text-transform: uppercase; 
+    background: linear-gradient(to right, #535252, #024126, rgb(12, 133, 26)); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.parrafoHistoria{
+    font-family: 'Georgia', serif; /* Fuente serif elegante */
+    font-size: 15px; /* Tamaño de la fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+    text-align: justify; /* Justificar el texto */
+    margin: 30px 0; /* Espaciado alrededor del párrafo */
+    padding: 15px; /* Relleno dentro del párrafo */
+    color: white;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.cuadrado2{
+    background-color: #fcfeff;
+    width: 1000px;
+    height: 100px;
+    margin-left: 400px;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.pregunta{
+    font-family: 'Arial', sans-serif; 
+    font-size: 35px;
+    color: #333;
+    text-align: center; 
+    text-transform: uppercase; 
+    background: linear-gradient(to right, #6a11cb, #2575fc); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.cuadradoImagenes{
+    background-color:#65C5BE;
+    display: flex;
+    align-items: flex-start;
+    width: 1065px;
+    height: 700px;
+    margin-left: 400px;
+    border-radius: 30px;
+    position: absolute;
+    
+}
+
+.seccion2{
+    display: flex;
+    align-items: flex-start;
+    /* Alinea los cuadrados en la parte superior */
+}
+
+.sub{
+    font-family: 'Arial', sans-serif; 
+    font-size: 35px;
+    color: #333;
+    text-align: center; 
+    text-transform: uppercase; 
+    background: linear-gradient(to right, #6a11cb, #2575fc); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.razon{
+    width: 100px; /* Ancho fijo para todas las imágenes */
+    height: 100px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que se recorte o escale proporcionalmente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    transition: transform 0.3s ease-in-out; /* Transición suave para el efecto hover */
+}
+
+
+
+
+
+

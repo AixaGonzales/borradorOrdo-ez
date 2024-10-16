@@ -1,0 +1,181 @@
+        body {
+            background-color: rgb(125, 227, 231);
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* Header */
+        .cuerpo {
+            background: linear-gradient(to bottom, #09504A, #1a8279, #93CFCA, #FFFFFF);
+        }
+
+        .encabezado {
+            background-color: #063B3B;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo {
+            max-height: 70px;
+        }
+
+        .contorno {
+            display: flex;
+            height: 10px;
+        }
+
+        .input {
+            padding: 15px;
+            width: 350px;
+            border-radius: 10px 0 0 10px;
+            border: 0;
+            outline: none;
+            flex: 1;
+            display: flex;
+        }
+
+        .botom {
+            background-color: #39938b !important;
+            padding: 15px;
+            border: 0;
+            border-radius: 0 5px 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .mensajeS {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px; /* Ajusta la altura según lo que necesites */
+            text-align: center;
+        }
+
+        .mensaje {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px 0;
+            position: relative;
+            display: inline-block;
+            color: rgb(193, 191, 191);
+        }
+
+        .menu {
+            background-color: #389292;
+            padding: 20px;
+            width: 96%;
+            justify-content: center;
+            border-radius: 50px;
+        }
+
+        .botones {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .botones li {
+            margin-left: 50px;
+            border: 2px solid #FED08A;
+            border-radius: 20px;
+            background-color: #70c1c1;
+            width: 200px;
+            text-align: center;
+        }
+
+        .botones a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: block;
+        }
+
+        /* Hover effect */
+        nav a:hover {
+            background-color: #036e5575;
+            border-radius: 20px;
+        }
+
+        /* Estilo de las tarjetas */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 tarjetas por fila */
+            gap: 20px; /* Espacio entre tarjetas */
+            width: 100%; /* Ocupa todo el ancho de la página */
+            padding: 20px; /* Espacio alrededor del contenedor */
+            box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+        }
+
+        .card {
+            display: flex; /* Uso de flexbox para la tarjeta */
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: left; /* Alinear texto a la izquierda */
+        }
+
+        .card-image {
+            width: 150px; /* Ancho de la imagen */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+
+        .card-content {
+            padding: 15px;
+            display: flex;
+            flex-direction: column; /* Para que el contenido esté en columna */
+            justify-content: center; /* Centrar el contenido verticalmente */
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .card-subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .card-paragraph {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        .card-button {
+            display: inline-block;
+            background-color: #389292;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: auto; /* Asegura que el botón esté al final */
+        }
+
+        .card-button:hover {
+            background-color: #1a8279;
+        }
+
+        /*Imgen portada*/
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    background-image: url(/imagenes/haciendo\ ejercicios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+}
